@@ -6,7 +6,7 @@ from datetime import datetime
 from abc import ABC, abstractmethod
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+mysqlconnector://root:keisha%402005@localhost:3306/libraryz'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+mysqlconnector://root:user%password@localhost:3306/libraryz'
 app.config['SECRET_KEY'] = 'your_secret_key'
 db = SQLAlchemy(app)
 
