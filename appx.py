@@ -4,7 +4,7 @@ from werkzeug.security import generate_password_hash, check_password_hash
 from datetime import datetime
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+mysqlconnector://root:keisha%402005@localhost:3306/library'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+mysqlconnector://root:username%password@localhost:3306/library'
 app.config['SECRET_KEY'] = 'your_secret_key'
 db = SQLAlchemy(app)
 
